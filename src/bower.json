@@ -1,0 +1,27 @@
+{
+  "name": "basis-frontend",
+  "version": "0.0.1",
+  "authors": [
+    "ronggur mangaraja habibun <ronggur.mh@gmail.com>"
+  ],
+  "description": "frontend",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "GNU",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3"
+  },
+  "devDependencies": {
+    "animate.css": "~3.3.0",
+    "html5shiv": "~3.7.2"
+  }
+}

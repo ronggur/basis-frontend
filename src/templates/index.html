@@ -1,0 +1,28 @@
+{% extends 'layout/main.html' %}
+
+{% block title %}Berakar{% endblock %}
+
+{% block head %}
+  {% parent %}
+{% endblock %}
+
+{% block header %}
+{% include 'layout/header.html' -%}
+{% endblock %}
+
+{% block bodyclass %}
+home
+{% endblock %}
+
+{% block footer %}
+{% include 'layout/footer.html' -%}
+{% endblock %}
+
+<!-- start main content -->
+{% block content %}
+<article>
+	<h1>Hello World!</h1>
+	<p>This is sample page</p>
+</article>
+{% endblock %}
+<!-- end main content -->

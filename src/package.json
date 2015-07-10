@@ -1,0 +1,40 @@
+{
+    "name": "basis-frontend",
+    "version": "0.0.1",
+    "description" : "Basis-Frontend is just basic library I need to finish my frontend tasks",
+    "devDependencies": {
+        "bower": "^1.4.1",
+        "gulp": "^3.9.0",
+        "gulp-concat": "^2.5.2",
+        "gulp-foreach": "^0.1.0",
+        "gulp-imagemin": "^2.3.0",
+        "gulp-jshint": "^1.10.0",
+        "gulp-minify-css": "^1.1.6",
+        "gulp-notify": "^2.2.0",
+        "gulp-prettify": "^0.3.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^2.0.1",
+        "gulp-sourcemaps": "^1.5.2",
+        "gulp-swig": "^0.7.4",
+        "gulp-uglify": "^1.2.0",
+        "gulp-util": "^3.0.5",
+        "gulp-watch": "^4.2.4"
+    },
+    "main": "gulpfile.js",
+    "author": "Ronggur Mangaraja Habibun",
+    "keywords": [
+        "frontend",
+        "gulp",
+        "html",
+        "swig",
+        "sass"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ronggur/basis-frontend.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ronggur/basis-frontend/issues"
+    },
+    "homepage": "https://github.com/ronggur/basis-frontend"
+}

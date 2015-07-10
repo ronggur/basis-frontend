@@ -1,0 +1,160 @@
+html,
+*,
+:before,
+:after {
+	@include box-sizing(border-box);
+}
+a {
+	text-decoration: none;
+}
+a,
+article,
+input {
+	@include transition();
+}
+p {
+	line-height: 1.5em;
+}
+.block {
+	display: block;
+	width: 100%;
+	clear: both;
+}
+.center-block {
+	float: none !important;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.borderless {
+	border: none!important;
+}
+.border {
+	border: 1px solid $gray-light;
+}
+.b-l {
+	border-left: 1px solid $gray-light;
+}
+.b-r {
+	border-right: 1px solid $gray-light;
+}
+.b-t {
+	border-top: 1px solid $gray-light;
+}
+.b-b {
+	border-bottom: 1px solid $gray-light;
+}
+.pull-right {
+	float: right !important;
+}
+
+.pull-left {
+	float: left !important;
+}
+.m-t0{
+	margin-top: 0!important;
+}
+.m-b0{
+	margin-bottom: 0!important;
+}
+.m-l0{
+	margin-left: 0!important;
+}
+.m-r0{
+	margin-right: 0!important;
+}
+.mobile-hidden {
+	@include respond-to(small){ 
+		display: none!important;
+	}
+}
+.mobile-show {
+	display: none;
+	@include respond-to(small){ 
+		display:initial!important;
+	}
+}
+.hidden {
+	display: none!important;
+}
+.show {
+	display: block!important;
+}
+/* text align */
+.t-c {
+	text-align: center;
+}
+.t-l {
+	text-align: left;
+}
+.t-r {
+	text-align: right;
+}
+
+/* Form */
+input[type=text],
+input[type=email],
+input[type=phone],
+input[type=password],
+.input-text,
+textarea {
+	border: none;
+	background-color: $bright;
+	line-height: 1;
+	padding: 5px 10px;
+	color: $gray-dark;
+	font-family: "Gudea", sans-serif;
+	width: 90%;
+	line-height: 1.5em;
+	outline: none;
+}
+input[type=submit],
+.btn {
+	display: inline-block;
+	padding: 6px 22px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	color: #fff;
+  	font-size: 16px;
+  	border: none;
+  	background-color: #68b23d;
+  	@include border-radius(3px);
+  	@include transition();
+  	&:hover {
+  		background-color: #62a33b;
+  	}
+}
+.form-control {
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+.btn {
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px 10px;
+	@include border-radius(3px);
+	&:hover {
+  		border-color: #73c941;
+  	}
+}

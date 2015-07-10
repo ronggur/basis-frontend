@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = yes" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{% block title %}Basis-Frontend Hello World!{% endblock %}</title>
+	{% block head %}
+  	<link rel="stylesheet" href="assets/css/libs.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  	{% endblock %}
+</head>
+<body class="{% block bodyclass -%}{%- endblock %}">
+	<!-- start header -->
+	{% block header -%}{%- endblock %}
+	<!-- end header -->
+
+	{% block content %}{% endblock %}
+	
+	<!-- start footer -->
+	{% block footer -%}{%- endblock %}
+	<!-- end footer -->
+	
+	<script src="assets/js/libs.js"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
